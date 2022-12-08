@@ -22,6 +22,7 @@ class Image(models.Model):
         verbose_name='локация',
         related_name='images',
         on_delete=models.CASCADE,
+        null = True,
      )
     
     position = models.PositiveIntegerField(
